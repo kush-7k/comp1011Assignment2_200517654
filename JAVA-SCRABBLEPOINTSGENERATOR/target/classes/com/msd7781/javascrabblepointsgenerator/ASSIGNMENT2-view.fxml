@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="688.0" style="-fx-background-color: darkorange;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.msd7781.javascrabblepointsgenerator.ASSIGNMENT2controller">
+    <children>
+        <Label fx:id="showTimer" alignment="CENTER" layoutX="117.0" layoutY="37.0" prefHeight="57.0" prefWidth="99.0" style="-fx-background-color: black; -fx-border-color: Lightgreen;" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="21.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect></Label>
+        <Button fx:id="submit" layoutX="125.0" layoutY="113.0" mnemonicParsing="false" onAction="#SubmitClick" prefHeight="28.0" prefWidth="67.0" style="-fx-background-color: blue; -fx-border-color: black;" text="SUBMIT" textFill="#00ff1e" />
+        <Button layoutX="284.0" layoutY="52.0" mnemonicParsing="false" onAction="#PreviousClick" style="-fx-background-color: green; -fx-border-color: Yellow;" text="Previous Words" textFill="WHITE" />
+        <Label layoutX="14.0" layoutY="49.0" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: black;" text="Total Points" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="takeCurrentWord" layoutX="209.0" layoutY="111.0" prefHeight="25.0" prefWidth="272.0" style="-fx-background-color: LIGHTYELLOW; -fx-border-color: Black;">
+            <font>
+                <Font name="Broadway" size="16.0" />
+            </font></TextField>
+        <Label fx:id="errorLabel" layoutX="14.0" layoutY="555.0" prefHeight="34.0" prefWidth="675.0" style="-fx-background-color: black; -fx-border-color: green;" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="21.0" />
+            </font></Label>
+        <Button fx:id="alphabetK" layoutX="192.0" layoutY="283.0" mnemonicParsing="false" onAction="#letterK" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="K" />
+        <Button fx:id="alphabetZ" layoutX="310.0" layoutY="474.0" mnemonicParsing="false" onAction="#letterZ" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="Z" />
+        <Button fx:id="alphabetY" layoutX="435.0" layoutY="407.0" mnemonicParsing="false" onAction="#letterY" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="Y" />
+        <Button fx:id="alphabetX" layoutX="373.0" layoutY="407.0" mnemonicParsing="false" onAction="#letterX" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="X" />
+        <Button fx:id="alphabetW" layoutX="310.0" layoutY="407.0" mnemonicParsing="false" onAction="#letterW" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="W" />
+        <Button fx:id="alphabetV" layoutX="248.0" layoutY="407.0" mnemonicParsing="false" onAction="#letterV" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="V" />
+        <Button fx:id="alphabetU" layoutX="192.0" layoutY="407.0" mnemonicParsing="false" onAction="#letterU" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="U" />
+        <Button fx:id="alphabetT" layoutX="435.0" layoutY="345.0" mnemonicParsing="false" onAction="#letterT" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="T" />
+        <Button fx:id="alphabetS" layoutX="371.0" layoutY="345.0" mnemonicParsing="false" onAction="#letterS" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="S" />
+        <Button fx:id="alphabetR" layoutX="310.0" layoutY="345.0" mnemonicParsing="false" onAction="#letterR" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="R" />
+        <Button fx:id="alphabetP" layoutX="192.0" layoutY="345.0" mnemonicParsing="false" onAction="#letterP" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="P" />
+        <Button fx:id="alphabetO" layoutX="435.0" layoutY="283.0" mnemonicParsing="false" onAction="#letterO" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="O" />
+        <Button fx:id="alphabetN" layoutX="371.0" layoutY="283.0" mnemonicParsing="false" onAction="#letterN" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="N" />
+        <Button fx:id="alphabetM" layoutX="310.0" layoutY="283.0" mnemonicParsing="false" onAction="#letterM" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="M" />
+        <Button fx:id="alphabetQ" layoutX="248.0" layoutY="345.0" mnemonicParsing="false" onAction="#letterQ" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="Q" />
+        <Button fx:id="alphabetL" layoutX="248.0" layoutY="283.0" mnemonicParsing="false" onAction="#letterL" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="L" />
+        <Button fx:id="alphabetJ" layoutX="435.0" layoutY="218.0" mnemonicParsing="false" onAction="#letterJ" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="J" />
+        <Button fx:id="alphabetI" layoutX="371.0" layoutY="218.0" mnemonicParsing="false" onAction="#letterI" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="I" />
+        <Button fx:id="alphabetH" layoutX="310.0" layoutY="218.0" mnemonicParsing="false" onAction="#letterH" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="H" />
+        <Button fx:id="alphabetG" layoutX="248.0" layoutY="218.0" mnemonicParsing="false" onAction="#letterG" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="G" />
+        <Button fx:id="alphabetF" layoutX="192.0" layoutY="218.0" mnemonicParsing="false" onAction="#letterF" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="F" />
+        <Button fx:id="alphabetA" layoutX="182.0" layoutY="157.0" mnemonicParsing="false" onAction="#letterA" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="A" />
+        <Button fx:id="alphabetB" layoutX="248.0" layoutY="157.0" mnemonicParsing="false" onAction="#letterB" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="B" />
+        <Button fx:id="alphabetE" layoutX="435.0" layoutY="157.0" mnemonicParsing="false" onAction="#letterE" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="E" />
+        <Button fx:id="alphabetD" layoutX="373.0" layoutY="157.0" mnemonicParsing="false" onAction="#letterD" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="D" />
+        <Button fx:id="alphabetC" layoutX="310.0" layoutY="157.0" mnemonicParsing="false" onAction="#letterC" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: grey;" text="C" />
+        <TextField fx:id="allLegalWords" layoutX="406.0" layoutY="52.0" prefHeight="28.0" prefWidth="281.0" style="-fx-border-color: black;" />
+        <Label alignment="CENTER" layoutX="199.0" layoutY="191.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: violet;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="325.0" layoutY="508.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: green;" text="10" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="444.0" layoutY="441.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: violet;" text="4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="386.0" layoutY="441.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="8">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="325.0" layoutY="441.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="263.0" layoutY="441.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="207.0" layoutY="441.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: violet;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="444.0" layoutY="379.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="207.0" layoutY="252.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="325.0" layoutY="379.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="207.0" layoutY="379.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="3">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="444.0" layoutY="317.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: violet;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="440.0" layoutY="252.0" prefHeight="1.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="8">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="386.0" layoutY="317.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="325.0" layoutY="317.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="3">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="263.0" layoutY="379.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: green;" text="10" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="450.0" layoutY="191.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: violet;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="378.0" layoutY="252.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: violet;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="382.0" layoutY="191.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="2">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="325.0" layoutY="252.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="4">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="325.0" layoutY="191.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="3">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="263.0" layoutY="252.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="2">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="263.0" layoutY="317.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="207.0" layoutY="317.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="5">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="386.0" layoutY="379.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="1">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="263.0" layoutY="191.0" prefHeight="17.0" prefWidth="20.0" style="-fx-background-color: yellow;" text="3">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Line endX="266.39996337890625" endY="-7.5999908447265625" layoutX="241.0" layoutY="218.0" startX="-65.60002136230469" startY="-7.5999908447265625" />
+        <Line endX="280.39996337890625" endY="-7.5999908447265625" layoutX="228.0" layoutY="468.0" startX="-53.79997253417969" startY="-7.5999755859375" />
+        <Line endX="253.5999755859375" endY="-7.5999755859375" layoutX="251.0" layoutY="406.0" startX="-73.60002136230469" startY="-7.5999755859375" />
+        <Line endX="264.79998779296875" endY="-7.5999755859375" layoutX="241.0" layoutY="344.0" startX="-66.79997253417969" startY="-7.5999755859375" />
+        <Line endX="254.0" endY="-7.5999755859375" layoutX="251.0" layoutY="279.0" startX="-75.19999694824219" startY="-7.5999755859375" />
+        <Line endX="262.39996337890625" endY="-7.5999908447265625" layoutX="245.0" layoutY="155.0" startX="-72.00706481933594" startY="-5.0999908447265625" />
+        <Line endX="-77.50706481933594" endY="231.69293212890625" layoutX="251.0" layoutY="228.0" startX="-77.50706481933594" startY="-77.59999084472656" />
+        <Line endX="257.1070556640625" endY="-81.30711364746094" layoutX="251.0" layoutY="228.0" startX="258.1070556640625" startY="231.69293212890625" />
+        <Line endX="264.5999755859375" endY="-76.39289855957031" layoutX="162.0" layoutY="227.0" startX="264.5999755859375" startY="232.69293212890625" />
+        <Line endX="257.1070556640625" endY="-81.30711364746094" layoutX="109.0" layoutY="229.0" startX="258.1070556640625" startY="231.69293212890625" />
+        <Line endX="249.39996337890625" endY="-78.39289855957031" layoutX="52.0" layoutY="229.0" startX="249.39996337890625" startY="230.69293212890625" />
+        <Line endX="-15.400009155273438" endY="-86.39289855957031" layoutX="262.0" layoutY="237.0" startX="-15.400009155273438" startY="224.10711669921875" />
+        <Line endX="123.89996337890625" endY="-13.80706787109375" layoutX="177.0" layoutY="474.0" startX="123.89996337890625" startY="54.79998779296875" />
+        <Line endX="106.81414794921875" endY="223.4000244140625" layoutX="261.0" layoutY="238.0" startX="106.81414794921875" startY="292.4000244140625" />
+        <Line endX="180.31414794921875" endY="46.9000244140625" layoutX="187.0" layoutY="484.0" startX="114.39996337890625" startY="45.29998779296875" />
+        <Button fx:id="clearButton" layoutX="401.0" layoutY="479.0" mnemonicParsing="false" onAction="#onClearButtonClick" text="Clear" />
+        <Label contentDisplay="CENTER" layoutX="234.0" layoutY="5.0" prefHeight="28.0" prefWidth="305.0" style="-fx-background-color: BLUE;" text="SCRABBLE POINTS GENERATOR" textFill="#22ff00">
+            <font>
+                <Font name="Bell MT" size="19.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
